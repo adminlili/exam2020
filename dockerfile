@@ -4,6 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN	apt-get update && \
 	apt-get upgrade -y && \
+	apt-get install -y python3 && \
         apt-get install -y pip3 && \
 	pip3 install websocket
 
